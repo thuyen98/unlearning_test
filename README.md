@@ -23,8 +23,17 @@ K-means and his close-friends
      * Sensible au choix des paramètres $$\epsilon$$ et *MinPts*
      * Moins efficace pour des données de haute dimension.
 * Optimisation des Paramètres:
-   * Méthode du Coude (Elbow Method)
-   * Indice de Silhouette
+   * Méthode du Coude (Elbow Method): est une technique heuristique utilisée pour déterminer le nombre de clusters dans un ensemble de données.
+       1. Calcul du WCSS: On applique l'algorithme de clustering k-means pour différents nombres de clusters (k) et on calcule la somme des carrés des distances (WCSS) entre chaque point et le centre de son cluster.
+       2. Tracé du graphique: On trace le WCSS en fonction du nombre de clusters.
+       3. Détection du coude: Le nombre optimal de clusters est déterminé par l'endroit où la courbe forme un coude, indiquant que l'ajout de clusters supplémentaires n'améliore pas significativement la somme des carrés des distances
+  => Simple à comprendre et à appliquer, mais peut être subjective dans la détection du coude.
+   * Indice de Silhouette:  mesure la qualité de la séparation des clusters.
+       1. Calcul de la silhouette: Pour chaque point, on calcule la distance moyenne entre ce point et les autres points de son cluster (a) et la distance moyenne entre ce point et les points du cluster le plus proche (b).
+       2. Formule de la silhouette: L'indice de silhouette pour chaque point est donné par $$ s= b-a / max(a,b)
+       3. Interprétation: La valeur de l'indice de silhouette varie de -1 à 1. Une valeur proche de 1 indique que les points sont bien regroupés dans leurs clusters respectifs, tandis qu'une valeur proche de -1 indique que les points sont mal regroupés.
+   => Fournit une mesure quantitative de la qualité du clustering, mais peut être plus complexe à calculer et interpréter.
+
 * Autres Approches de Clustering
   * Agglomerative Clustering (Clustering Hiérarchique)
   * Gaussian Mixture Model (GMM)
