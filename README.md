@@ -7,7 +7,7 @@ K-means and his close-friends
   * Paramètres : Nombre de clusters k à définir à l'avance.
   * Avantages :
      * Simple et rapide.
-     * +Efficace pour des clusters sphériques et de taille similaire.
+     * Efficace pour des clusters sphériques et de taille similaire.
   * Inconvénients :
      * Sensible aux valeurs aberrantes.
      * Nécessite de connaître k à l'avance.
@@ -21,4 +21,4 @@ K-means and his close-friends
      * Ne nécessite pas de connaître le nombre de clusters à l'avance.
   * Inconvénients :
      * Sensible au choix des paramètres $$\epsilon$$ et *MinPts*
-     *  Moins efficace pour des données de haute dimension.
+     * Moins efficace pour des données de haute dimension.
