@@ -22,3 +22,9 @@ K-means and his close-friends
   * Inconvénients :
      * Sensible au choix des paramètres $$\epsilon$$ et *MinPts*
      * Moins efficace pour des données de haute dimension.
+* Optimisation des Paramètres:
+   * Méthode du Coude (Elbow Method)
+   * Indice de Silhouette
+* Autres Approches de Clustering
+  * Agglomerative Clustering (Clustering Hiérarchique)
+  * Gaussian Mixture Model (GMM)
