@@ -20,5 +20,5 @@ K-means and his close-friends
      * Gère bien les valeurs aberrantes.
      * Ne nécessite pas de connaître le nombre de clusters à l'avance.
   * Inconvénients :
-     * Sensible au choix des paramètres \epsilon et *MinPts*
+     * Sensible au choix des paramètres $$\epsilon$$ et *MinPts*
      *  Moins efficace pour des données de haute dimension.
